@@ -1,0 +1,6 @@
+{ allowUnfree = true;
+
+  packageOverrides = pkgs: {
+    
+  };
+}
