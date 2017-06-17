@@ -14,13 +14,7 @@
     version = 2;
     device = "/dev/disk/by-id/wwn-0x5000c50024d87fe5";
     useOSProber = true;
-  };
-
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/93E8-7930";
-    fsType = "vfat";
-  };
+  }; 
 
   networking.hostName = "adam-x200-nixos";
-  
 }
