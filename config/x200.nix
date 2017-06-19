@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 
+with builtins;
 let
   trackPointPath = "/sys/devices/platform/i8042/serio1";
+  speed = 255;
+  press = 0;
 in
 { boot.kernelModules = [ "intel_agp" "i915" "tp_smapi" ];
   
@@ -19,8 +22,8 @@ in
     serviceConfig = {
       ExecStart = ''
         ${pkgs.bash}/bin/bash -c '\
-          echo -n 0 > ${trackPointPath}/press_to_select; \
-          echo -n 230 > ${trackPointPath}/speed; \
+          echo -n ${toString press} > ${trackPointPath}/press_to_select; \
+          echo -n ${toString speed} > ${trackPointPath}/speed; \
         '
       '';
     };
