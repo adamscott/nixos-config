@@ -3,11 +3,11 @@
 {
   imports = [
     <nixos-hardware/lenovo/thinkpad/t430>
-    ./hardware-configuration.nix
-    ./nixos-config/hardware/adam-t430
-    ./nixos-config/common/desktops/kde
-    ./nixos-config/common/shells/fish
-    ./nixos-config/common/external-hardware/wacom
+    ../../hardware-configuration.nix
+    ./hardware/adam-t430
+    ./common/desktops/kde
+    ./common/shells/fish
+    ./common/external-hardware/wacom
   ];
 
   services.xserver.layout = "ca";
