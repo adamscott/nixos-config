@@ -5,6 +5,7 @@
     <nixos-hardware/lenovo/thinkpad/t430>
     ../../hardware-configuration.nix
     ../hardware/adam-t430.nix
+    ../common/users
     ../common/desktops/kde
     ../common/shells/fish
     ../common/external-hardware/wacom
