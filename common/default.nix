@@ -12,6 +12,8 @@
     gcc
     gitAndTools.gitFull
     gnumake
+    busybox
+    pciutils
   ];
 
   networking = {
