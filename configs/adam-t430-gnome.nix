@@ -6,7 +6,7 @@
     ../../hardware-configuration.nix
     ../hardware/adam-t430.nix
     ../common/users
-    ../common/desktops/kde
+    ../common/desktops/gnome
     ../common/shells/fish
     ../common/external-hardware/wacom
   ];
